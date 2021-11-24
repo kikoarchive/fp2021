@@ -40,8 +40,8 @@ prime n = factors n == [1,n]
 primes :: Int -> Int -> [Int]
 primes n k= [x | x <- [n..k], prime x]
 
-primesT :: Integral a => [a]
-primesT = primesTME               --
+--Main> primes 2 15
+--[2,3,5,7,11,13]
 
-primesR :: Integral a => a -> a -> [a]
-primesR a b = takeWhile (<= b) $ dropWhile (< a) primes
+-- Висновок: В результаті виконання лабораторної роботи, ми набули досвіду визначення рекурсивниї функцій,
+-- навчилися використовувати механізм зіставлення зі зразком та попрацювали з кортежами та списками.
